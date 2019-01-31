@@ -45,7 +45,7 @@ curl -w %{http_code} http://dev.uac.openapi.vcinema.cn:6666/cdn_auth\?remote_add
 ### (3)认证不通过，返回403
 + 通过参数传递
 ```
-curl -w %{http_code} http://dev.uac.openapi.vcinema.cn:6668/cdn_auth\?remote_addr\=1.1.1.1\&cdn_key\=xxxxxxxxx\&uri=/201812/demo.m3u8&auth_key=1545482419-0-0-2c0fc3f68315cd50875e453a329d48e1&secret=xxxxx
+curl -w %{http_code} http://dev.uac.openapi.vcinema.cn:6666/cdn_auth\?remote_addr\=1.1.1.1\&cdn_key\=xxxxxxxxx\&uri=/201812/demo.m3u8&auth_key=1545482419-0-0-2c0fc3f68315cd50875e453a329d48e1&secret=xxxxx
 ```
 
 + 通过header传递
